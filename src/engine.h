@@ -25,13 +25,4 @@ struct AppState {
   GameState *gameState;
 };
 
-SDL_AppResult engine_init(int width, int height, const char *title,
-                          struct AppState *appState);
-SDL_AppResult engine_build_game(struct AppState *appState);
-SDL_AppResult engine_rebuild_reload_game(struct AppState *appState);
-
-void engine_free_code_instance(struct Game *game);
-SDL_AppResult engine_update(struct AppState *appState);
-void debug_pointers(const struct AppState *appState, const char *label);
-
 #endif
